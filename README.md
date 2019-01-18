@@ -2,7 +2,7 @@
 
 
 
-#### [前端API模板](https://blog.csdn.net/sanyaoxu_2/article/details/80555328)
+#### [前端API](https://www.eolinker.com/#/share/index?shareCode=inuCyy)
 
 
 #### 后台开发需要Controller时添加swagger2的注解
