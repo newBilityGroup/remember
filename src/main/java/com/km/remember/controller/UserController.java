@@ -20,7 +20,7 @@ public class UserController {
     UserService userService;
 
     @ResponseBody
-    @GetMapping(value = "")
+    @GetMapping(value = "/login/{username}/{password}")
     @ApiOperation(value="输入用户名和密码进行登录", notes="当数据库成功查询到对象后，返回该对象，否则返回null")
     @ApiImplicitParams({
             @ApiImplicitParam(paramType="path", name = "username", value = "用户名", required = true, dataType = "String"),

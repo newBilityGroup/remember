@@ -29,8 +29,9 @@ public class ClassController {
     @ApiImplicitParams({
             @ApiImplicitParam(paramType="path", name = "classId", value = "班级编号", required = true, dataType = "String"),
     })
-    public ClassInfo getClassInfo(String classId){
-        return classService.getClassInfo(classId);
+    public ClassInfo getClassInfo(@PathVariable String classId){
+        System.out.println(classId+"================");
+        return classService.getClassInfo(classId+"");
     }
 
 }
