@@ -13,7 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 @Api
 @Controller
-@RequestMapping("/user")
+@RequestMapping("/users")
 public class UserController {
 
     @Autowired
@@ -27,12 +27,8 @@ public class UserController {
             @ApiImplicitParam(paramType="path", name = "password", value = "密码", required = true, dataType = "String")
     })
     public User login(@PathVariable String username,@PathVariable String password) {
-        System.out.println(password);
         User user = userService.login(username,password);
-        if (user == null)
-            return null;
-        else
-            return user;
+        return user;
     }
 
 }
