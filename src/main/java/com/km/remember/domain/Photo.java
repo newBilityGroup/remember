@@ -4,6 +4,9 @@ import java.util.Date;
 
 public class Photo {
     private String photoId;         //图片ID
+    private String activityId;      //图片所属活动ID
+    private String classId;         //班级ID
+    private int category;           //100 班级头像  101 班级logo  200 活动
     private String userId;          //上传者ID
     private String photoURI;        //图片路径
     private String introduction;    //图片简介
@@ -16,6 +19,30 @@ public class Photo {
 
     public void setPhotoId(String photoId) {
         this.photoId = photoId;
+    }
+
+    public String getActivityId() {
+        return activityId;
+    }
+
+    public void setActivityId(String activityId) {
+        this.activityId = activityId;
+    }
+
+    public String getClassId() {
+        return classId;
+    }
+
+    public void setClassId(String classId) {
+        this.classId = classId;
+    }
+
+    public int getCategory() {
+        return category;
+    }
+
+    public void setCategory(int category) {
+        this.category = category;
     }
 
     public String getUserId() {
@@ -62,10 +89,13 @@ public class Photo {
     public String toString() {
         return "Photo{" +
                 "photoId='" + photoId + '\'' +
+                ", activityId='" + activityId + '\'' +
+                ", classId='" + classId + '\'' +
+                ", category=" + category +
                 ", userId='" + userId + '\'' +
                 ", photoURI='" + photoURI + '\'' +
                 ", introduction='" + introduction + '\'' +
-                ", status='" + status + '\'' +
+                ", status=" + status +
                 ", uploadTime=" + uploadTime +
                 '}';
     }

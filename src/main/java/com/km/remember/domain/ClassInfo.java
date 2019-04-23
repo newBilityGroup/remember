@@ -4,7 +4,7 @@ package com.km.remember.domain;
 public class ClassInfo {
     private String classId;                //班级ID
     private String className;              //班级名
-    private String introduction;           //班级简介
+    private String desc;                   //班级简介
     private String logo;                   //班级logo
     private String honor;                  //班级荣誉
 
@@ -24,12 +24,12 @@ public class ClassInfo {
         this.className = className;
     }
 
-    public String getIntroduction() {
-        return introduction;
+    public String getDesc() {
+        return desc;
     }
 
-    public void setIntroduction(String introduction) {
-        this.introduction = introduction;
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 
     public String getLogo() {
@@ -53,7 +53,7 @@ public class ClassInfo {
         return "ClassInfo{" +
                 "classId='" + classId + '\'' +
                 ", className='" + className + '\'' +
-                ", introduction='" + introduction + '\'' +
+                ", desc='" + desc + '\'' +
                 ", logo='" + logo + '\'' +
                 ", honor='" + honor + '\'' +
                 '}';
